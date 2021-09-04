@@ -4,10 +4,10 @@ import org.openqa.selenium.WebDriver;
 
 public class Browser extends Base{
 
-    private WebDriver _driver;
+    private WebDriver driver;
 
     public Browser(WebDriver driver) {
-        _driver = driver;
+        this.driver = driver;
     }
 
     public BrowserType Type;
@@ -15,11 +15,11 @@ public class Browser extends Base{
 
     public void GoToUrl(String url)
     {
-        _driver.get(url);
+        driver.get(url);
     }
 
     public void Maximize()
     {
-        _driver.manage().window().maximize();
+        driver.manage().window().maximize();
     }
 }
